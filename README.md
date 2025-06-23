@@ -182,15 +182,12 @@ This model classifies flowers into one of the three classes: Setosa, Versicolor,
 
     We also have other fields as well:
     1. Accuracy : Total correct predictions / Total number of samples.
-        Its a global metric, hence, its is not calculated for each class but for the overall classification model. That's why it appears only once, on the f1-score column as 
-        an overall score.
+        Its a global metric, hence, its is not calculated for each class but for the overall classification model. That's why it appears only once, on the f1-score column as an overall score.
     2. Weighted avg : (F1- score for each class * Support value of that class)/ Total number of samples. 
         This is calculated for each field(Precision, Recall, F1-score) individually.
     3. Macro avg : Average of each class scores, treating all classes equally.
         Suppose we are calculating the macro average for Precision field(column), then the formula for that will be:
-        macro avg of Precision = (Value of Precision for Class 1 + Value of Precision for Class 2 + --- + Value of Precision for Class n)/support value for any class(as it treats 
-        all the classes equally)
-        In our case, 
+        macro avg of Precision = (Value of Precision for Class 1 + Value of Precision for Class 2 + --- + Value of Precision for Class n)/support value for any class(as it treats all the classes equally). In our case, 
         macro avg of Precision = (Value of Precision for Class Setosa + Value of Precision for Versicolor + Value of Precision for Virginica ) / support value of Setosa/Versicolor/
         Virginica.
 
